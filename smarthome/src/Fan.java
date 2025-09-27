@@ -1,10 +1,12 @@
 public class Fan implements Appliance{
     private int powerLevel;
 
+    //Power Level: 0 (OFF), 1, 2
     public Fan(int powerLevel) {
         this.powerLevel = powerLevel;
     }
 
+    //Check for range then set power level
     public void setPowerLevel(int powerLevel) {
         if (powerLevel >= 0 && powerLevel < 3){
             this.powerLevel = powerLevel;

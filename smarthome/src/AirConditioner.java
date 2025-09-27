@@ -2,6 +2,7 @@ public class AirConditioner implements Appliance{
 
     private Thermostat temperatureSetting;
 
+    //Set AC mode on "System" on connection
     public AirConditioner(Thermostat temperatureSetting){
         this.temperatureSetting = temperatureSetting;
     }

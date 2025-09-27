@@ -6,8 +6,8 @@ public class Main {
     SmartHomeOS os = new SmartHomeOS();
     int optionSelected;
 
+    //Startup Appliance Control Program and provide commands for user
     void main(String[] args) {
-
 
         os.StartUp();
         os.ShowApllianceStatus();
@@ -55,12 +55,10 @@ public class Main {
 
     void SetFan() {
         System.out.println("Fan Control: 1 - Speed Up | 2 - Slow Down");
-        switch (scanner.nextInt()) {
-            case 1:
-                os.SpeedUpFan();
-                break;
-            default:
-                os.SlowDownFan();
+        if (scanner.nextInt() == 1) {
+            os.SpeedUpFan();
+        } else {
+            os.SlowDownFan();
         }
 
     }
