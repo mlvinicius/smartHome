@@ -1,0 +1,3 @@
+interface Appliance {
+    String getPowerStatus();
+}
